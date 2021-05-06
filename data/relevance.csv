@@ -1,0 +1,22 @@
+authentication_server, Example can be Kerberos
+backup_server,
+client, End user host
+content_management_server, Examples are Sharepoint and COnfluence
+database_server, Examples are SQL and NoSQL
+directory_server, Typically LDAP
+file_server, Examples are FTP SMB and NFS
+instant_messaging_server, Chat server like Mattermost
+login_server, Including terminal server Examples are SSH Citrix
+log_server, Typically a log management server or SIEM solution
+mail_server, Can be Exchange or Postfix
+name_server, Examples are DNS and NetBIOS
+network_firewall,
+network_management_server, Management of network components and network management systems
+network_router,
+network_switch,
+print_server,
+proxy_server, Example can be a webproxy like Fortinet
+software_distribution_server,
+terminal_server, Terminal server\, multiuser version of client. More central network placement
+virtualization_server, Hosting different virtual machines typically ESX
+web_server, Typically Apache httpd or IIS
