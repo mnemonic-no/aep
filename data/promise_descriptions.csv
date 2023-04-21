@@ -5,6 +5,8 @@ access_network_infrastructure, Access to internal network devices (switches\, ro
 access_network_intercept, Ability to read\, write\, delete\, intercept network traffic between other hosts in the target infrastructure
 access_password_store, Access to password store on a host
 access_physical, Physical access to a host (e.g. the ability to plug in peripheral devices)
+access_virtual_network, Access to the virtual network in the target infrastructure (normal send and receive network traffic)
+access_virtual_infrastructure, Access to virtual network devices (switches\, routers\, firewalls) in the target infrastructure
 adversary_controlled_communication_channel, Provides an adversary controlled communication channel between the inside of an organization's network and the adversary's infrastructure - previous name command_and_control
 code_executed, The adversary has executed code (e.g. malware or a tool/utility that is built-in to the target system) - previous name execute_code
 credentials_2fa_token, Provides two-factor token
