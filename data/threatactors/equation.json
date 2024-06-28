@@ -1,1 +1,1 @@
-{"techniques": ["T1109", "T1120", "T1480.001", "T1542.002", "T1564.005"], "tool_techniques": []}
+{"techniques": ["T1564.005", "T1120", "T1480.001", "T1542.002", "T1109"], "tool_techniques": []}

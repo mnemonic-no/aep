@@ -133,9 +133,9 @@
                 "name": "NTDS",
                 "provides": [
                     "access_password_store",
-                    "credentials_user_local",
                     "credentials_admin_domain",
-                    "credentials_user_domain"
+                    "credentials_user_domain",
+                    "credentials_user_local"
                 ],
                 "relevant_for": [
                     "directory_server"
@@ -175,9 +175,9 @@
             "T1003.006": {
                 "name": "DCSync",
                 "provides": [
-                    "credentials_user_local",
                     "credentials_admin_domain",
-                    "credentials_user_domain"
+                    "credentials_user_domain",
+                    "credentials_user_local"
                 ],
                 "relevant_for": [
                     "directory_server"
@@ -565,7 +565,11 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {},
+        "subtechniques": {
+            "T1016.001": {
+                "name": "Internet Connection Discovery"
+            }
+        },
         "tactic": [
             "Discovery"
         ]
@@ -746,6 +750,7 @@
         "requires": [
             "adversary_controlled_communication_channel",
             "code_executed",
+            "moved_laterally",
             "privileges_user_local"
         ],
         "subtechniques": {},
@@ -802,6 +807,9 @@
             },
             "T1027.005": {
                 "name": "Indicator Removal from Tools"
+            },
+            "T1027.009": {
+                "name": "Embedded Payloads"
             }
         },
         "tactic": [
@@ -972,6 +980,9 @@
             },
             "T1036.006": {
                 "name": "Space after Filename"
+            },
+            "T1036.007": {
+                "name": "Double File Extension"
             }
         },
         "tactic": [
@@ -1115,8 +1126,8 @@
         ],
         "name": "Network Sniffing",
         "provides": [
-            "credentials_user_local",
             "credentials_user_domain",
+            "credentials_user_local",
             "info_network_hosts",
             "info_network_services",
             "info_network_shares",
@@ -1498,6 +1509,9 @@
             },
             "T1053.006": {
                 "name": "Systemd Timers"
+            },
+            "T1053.007": {
+                "name": "Container Orchestration Job"
             }
         },
         "tactic": [
@@ -1692,6 +1706,9 @@
                     "tool_available",
                     "tool_delivery"
                 ]
+            },
+            "T1055.015": {
+                "name": "ListPlanting"
             }
         },
         "tactic": [
@@ -1704,7 +1721,6 @@
         "mitigations": [],
         "name": "Input Capture",
         "provides": [
-            "credentials_user_local",
             "credentials_user_domain",
             "credentials_user_local"
         ],
@@ -2050,6 +2066,9 @@
                     "code_executed",
                     "privileges_user_local"
                 ]
+            },
+            "T1070.007": {
+                "name": "Clear Network Connection History and Configurations"
             }
         },
         "tactic": [
@@ -2678,6 +2697,9 @@
                     "access_filesystem",
                     "privileges_user_local"
                 ]
+            },
+            "T1098.005": {
+                "name": "Device Registration"
             }
         },
         "tactic": [
@@ -2741,9 +2763,7 @@
             "[M1031] Network Intrusion Prevention"
         ],
         "name": "Multi-Stage Channels",
-        "provides": [
-            "target_information"
-        ],
+        "provides": [],
         "relevant_for": [
             "authentication_server",
             "backup_server",
@@ -3209,7 +3229,8 @@
         "requires": [
             "code_executed",
             "info_peripheral_devices",
-            "privileges_user_local"
+            "privileges_user_local",
+	    "moved_laterally"
         ],
         "subtechniques": {},
         "tactic": [
@@ -3700,8 +3721,8 @@
         ],
         "name": "Browser Extensions",
         "provides": [
-            "credentials_user_local",
             "credentials_user_domain",
+            "credentials_user_local",
             "credentials_user_thirdparty",
             "persistence"
         ],
@@ -3725,8 +3746,8 @@
         ],
         "name": "Man in the Browser",
         "provides": [
-            "credentials_user_local",
             "credentials_user_domain",
+            "credentials_user_local",
             "credentials_user_thirdparty",
             "info_network_hosts",
             "target_information"
@@ -3757,7 +3778,6 @@
         ],
         "name": "Forced Authentication",
         "provides": [
-            "credentials_user_local",
             "credentials_user_domain",
             "credentials_user_local"
         ],
@@ -3937,8 +3957,8 @@
         "name": "Trusted Relationship",
         "provides": [
             "access_network",
-            "credentials_user_local",
             "credentials_user_domain",
+            "credentials_user_local",
             "privileges_user_local",
             "tool_delivery"
         ],
@@ -4150,6 +4170,9 @@
             },
             "T1204.002": {
                 "name": "Malicious File"
+            },
+            "T1204.003": {
+                "name": "Malicious Image"
             }
         },
         "tactic": [
@@ -4199,6 +4222,14 @@
         "subtechniques": {
             "T1205.001": {
                 "name": "Port Knocking"
+            },
+            "T1205.002": {
+                "name": "Socket Filters",
+                "requires": [
+                    "access_network",
+                    "code_executed",
+                    "privileges_admin_local"
+                ]
             }
         },
         "tactic": [
@@ -4340,7 +4371,6 @@
         ],
         "name": "Exploitation for Credential Access",
         "provides": [
-            "credentials_user_local",
             "credentials_admin_local",
             "credentials_user_domain",
             "credentials_user_local"
@@ -4424,6 +4454,9 @@
                     "info_network_services",
                     "info_username"
                 ]
+            },
+            "T1213.003": {
+                "name": "Code Repositories"
             }
         },
         "tactic": [
@@ -4560,6 +4593,9 @@
             },
             "T1218.012": {
                 "name": "Verclsid"
+            },
+            "T1218.013": {
+                "name": "Mavinject"
             }
         },
         "tactic": [
@@ -4800,7 +4836,9 @@
             "virtualization_server",
             "web_server"
         ],
-        "requires": ["access_network"],
+        "requires": [
+            "access_network"
+        ],
         "subtechniques": {},
         "tactic": [
             "Discovery"
@@ -5380,6 +5418,9 @@
                     "tool_available",
                     "tool_delivery"
                 ]
+            },
+            "T1505.005": {
+                "name": "Terminal Services DLL"
             }
         },
         "tactic": [
@@ -5639,9 +5680,9 @@
         "mitigations": [],
         "name": "Internal Spearphishing",
         "provides": [
-            "credentials_user_local",
             "credentials_admin_domain",
             "credentials_user_domain",
+            "credentials_user_local",
             "tool_delivery"
         ],
         "relevant_for": [
@@ -6115,6 +6156,9 @@
             },
             "T1546.015": {
                 "name": "Component Object Model Hijacking"
+            },
+            "T1546.016": {
+                "name": "Installer Packages"
             }
         },
         "tactic": [
@@ -6253,6 +6297,14 @@
                     "privileges_admin_local",
                     "tool_available",
                     "tool_delivery"
+                ]
+            },
+            "T1547.014": {
+                "name": "Active Setup",
+                "requires": [
+                    "access_filesystem",
+                    "code_executed",
+                    "privileges_admin_local"
                 ]
             }
         },
@@ -6414,7 +6466,6 @@
         ],
         "name": "Unsecured Credentials",
         "provides": [
-            "credentials_user_local",
             "credentials_user_domain",
             "credentials_user_local",
             "credentials_user_thirdparty"
@@ -6456,6 +6507,9 @@
             },
             "T1552.006": {
                 "name": "Group Policy Preferences"
+            },
+            "T1552.007": {
+                "name": "Container API"
             }
         },
         "tactic": [
@@ -6522,6 +6576,9 @@
                     "code_executed",
                     "credentials_user_local"
                 ]
+            },
+            "T1553.006": {
+                "name": "Code Signing Policy Modification"
             }
         },
         "tactic": [
@@ -6579,7 +6636,6 @@
         ],
         "name": "Credentials from Password Stores",
         "provides": [
-            "credentials_user_local",
             "credentials_admin_local",
             "credentials_user_domain",
             "credentials_user_local"
@@ -6636,6 +6692,9 @@
                     "tool_available",
                     "tool_delivery"
                 ]
+            },
+            "T1555.005": {
+                "name": "Password Managers"
             }
         },
         "tactic": [
@@ -6652,7 +6711,6 @@
         ],
         "name": "Modify Authentication Process",
         "provides": [
-            "credentials_user_local",
             "credentials_admin_domain",
             "credentials_admin_local",
             "credentials_user_domain",
@@ -6729,6 +6787,13 @@
                     "tool_available",
                     "tool_delivery"
                 ]
+            },
+            "T1556.007": {
+                "name": "Hybrid Identity",
+                "provides": [
+                    "credentials_user_thirdparty",
+                    "defense_evasion"
+                ]
             }
         },
         "tactic": [
@@ -6754,8 +6819,8 @@
         ],
         "name": "Man-in-the-Middle",
         "provides": [
-            "credentials_user_local",
             "credentials_user_domain",
+            "credentials_user_local",
             "credentials_user_thirdparty"
         ],
         "relevant_for": [
@@ -6773,6 +6838,9 @@
             },
             "T1557.002": {
                 "name": "ARP Cache Poisoning"
+            },
+            "T1557.003": {
+                "name": "DHCP Spoofing"
             }
         },
         "tactic": [
@@ -6903,6 +6971,9 @@
             },
             "T1559.002": {
                 "name": "Dynamic Data Exchange"
+            },
+            "T1559.003": {
+                "name": "XPC Services"
             }
         },
         "tactic": [
@@ -7067,6 +7138,15 @@
             },
             "T1562.008": {
                 "name": "Disable Cloud Logs"
+            },
+            "T1562.009": {
+                "name": "Safe Mode Boot",
+                "provides": [
+                    "defense_evasion"
+                ],
+                "requires": [
+                    "privileges_admin_local"
+                ]
             }
         },
         "tactic": [
@@ -7169,6 +7249,9 @@
             },
             "T1564.007": {
                 "name": "VBA Stomping"
+            },
+            "T1564.008": {
+                "name": "Email Hiding Rules"
             }
         },
         "tactic": [
@@ -7243,7 +7326,6 @@
         ],
         "name": "Phishing",
         "provides": [
-            "credentials_user_local",
             "credentials_user_domain",
             "credentials_user_local",
             "tool_delivery"
@@ -7746,6 +7828,9 @@
                     "tool_available",
                     "tool_delivery"
                 ]
+            },
+            "T1574.013": {
+                "name": "KernelCallbackTable"
             }
         },
         "tactic": [
@@ -7875,6 +7960,9 @@
             },
             "T1583.006": {
                 "name": "Web Services"
+            },
+            "T1583.007": {
+                "name": "Serverless"
             }
         },
         "tactic": [
@@ -7912,6 +8000,9 @@
             },
             "T1584.006": {
                 "name": "Web Services"
+            },
+            "T1584.007": {
+                "name": "Serverless"
             }
         },
         "tactic": [
@@ -7936,6 +8027,9 @@
             },
             "T1585.002": {
                 "name": "Email Accounts"
+            },
+            "T1585.003": {
+                "name": "Cloud Accounts"
             }
         },
         "tactic": [
@@ -7968,6 +8062,9 @@
                 "requires": [
                     "info_target_employee"
                 ]
+            },
+            "T1586.003": {
+                "name": "Cloud Accounts"
             }
         },
         "tactic": [
@@ -8058,7 +8155,6 @@
         ],
         "name": "Gather Victim Identity Information",
         "provides": [
-            "credentials_user_local",
             "info_email_address",
             "info_groupname",
             "info_username"
@@ -8073,7 +8169,6 @@
             "T1589.001": {
                 "name": "Credentials",
                 "provides": [
-                    "credentials_user_local"
                 ]
             },
             "T1589.002": {
@@ -8185,7 +8280,6 @@
             "T1591.001": {
                 "name": "Determine Physical Locations",
                 "provides": [
-                    "access_physical"
                 ]
             },
             "T1591.002": {
@@ -8291,6 +8385,9 @@
             },
             "T1593.002": {
                 "name": "Search Engines"
+            },
+            "T1593.003": {
+                "name": "Code Repositories"
             }
         },
         "tactic": [
@@ -8357,6 +8454,9 @@
                     "info_network_services",
                     "info_vulnerability"
                 ]
+            },
+            "T1595.003": {
+                "name": "Wordlist Scanning"
             }
         },
         "tactic": [
@@ -8493,6 +8593,18 @@
         },
         "tactic": [
             "Reconnaissance"
+        ]
+    },
+    "T1599": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Network Boundary Bridging",
+        "provides": [],
+        "relevant_for": [],
+        "requires": [],
+        "subtechniques": {},
+        "tactic": [
+            "Defense Evasion"
         ]
     },
     "T1600": {
@@ -8667,6 +8779,361 @@
         },
         "tactic": [
             "Collection"
+        ]
+    },
+    "T1606": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Forge Web Credentials",
+        "provides": [
+            "privileges_user_thirdparty"
+        ],
+        "relevant_for": [],
+        "requires": [],
+        "subtechniques": {},
+        "tactic": [
+            "Credential Access"
+        ]
+    },
+    "T1608": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Stage Capabilities",
+        "provides": [],
+        "relevant_for": [],
+        "requires": [
+            "infrastructure_server",
+            "tool_available"
+        ],
+        "subtechniques": {},
+        "tactic": [
+            "Resource Development"
+        ]
+    },
+    "T1609": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Container Administration Command",
+        "provides": [
+            "access_memory",
+            "access_network",
+            "access_network_infrastructure",
+            "code_executed"
+        ],
+        "relevant_for": [
+            "virtualization_server"
+        ],
+        "requires": [
+            "privileges_admin_domain",
+            "tool_delivery"
+        ],
+        "subtechniques": {},
+        "tactic": [
+            "Execution"
+        ]
+    },
+    "T1610": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Deploy Container",
+        "provides": [
+            "access_virtual_infrastructure",
+            "access_virtual_network",
+            "code_executed",
+            "defense_evasion"
+        ],
+        "relevant_for": [
+            "cloud",
+            "virtualization_server"
+        ],
+        "requires": [
+            "privileges_user_local",
+            "tool_delivery"
+        ],
+        "subtechniques": {},
+        "tactic": [
+            "Defense  Evasion",
+            "Execution"
+        ]
+    },
+    "T1611": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Escape to Host",
+        "provides": [
+            "privileges_admin_local",
+            "privileges_system_local",
+            "privileges_user_domain",
+            "privileges_user_local"
+        ],
+        "relevant_for": [
+            "authentication_server",
+            "backup_server",
+            "client",
+            "content_management_server",
+            "database_server",
+            "directory_server",
+            "file_server",
+            "instant_messaging_server",
+            "log_server",
+            "login_server",
+            "mail_server",
+            "name_server",
+            "network_firewall",
+            "network_management_server",
+            "network_router",
+            "print_server",
+            "proxy_server",
+            "software_distribution_server",
+            "virtualization_server",
+            "web_server"
+        ],
+        "requires": [
+            "privileges_admin_local",
+            "tool_delivery"
+        ],
+        "subtechniques": {},
+        "tactic": [
+            "Privilege Escalation"
+        ]
+    },
+    "T1612": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Build Image on Host",
+        "provides": [
+            "defense_evasion"
+        ],
+        "relevant_for": [
+            "virtualization_server"
+        ],
+        "requires": [
+            "privileges_admin_local",
+            "tool_available"
+        ],
+        "subtechniques": {},
+        "tactic": [
+            "Defense Evasion"
+        ]
+    },
+    "T1613": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Container and Resource Discovery",
+        "provides": [
+            "info_cloud_hosts",
+            "info_cloud_services",
+            "info_network_services",
+            "info_password_policy",
+            "info_process_info"
+        ],
+        "relevant_for": [
+            "virtualization_server"
+        ],
+        "requires": [
+            "info_cloud_services",
+            "privileges_admin_domain",
+            "privileges_user_domain"
+        ],
+        "subtechniques": {},
+        "tactic": [
+            "Discovery"
+        ]
+    },
+    "T1614": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "System Location Discovery",
+        "provides": [],
+        "relevant_for": [],
+        "requires": [],
+        "subtechniques": {},
+        "tactic": []
+    },
+    "T1615": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Group Policy Discovery",
+        "provides": [
+            "info_groupname",
+            "info_password_policy"
+        ],
+        "relevant_for": [],
+        "requires": [
+            "access_filesystem",
+            "privileges_user_local"
+        ],
+        "subtechniques": {},
+        "tactic": [
+            "Discovery"
+        ]
+    },
+    "T1619": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Cloud Storage Object Discovery",
+        "provides": [
+            "info_cloud_hosts"
+        ],
+        "relevant_for": [
+            "authentication_server",
+            "backup_server",
+            "client",
+            "content_management_server",
+            "database_server",
+            "directory_server",
+            "file_server",
+            "instant_messaging_server",
+            "log_server",
+            "login_server",
+            "mail_server",
+            "name_server",
+            "network_firewall",
+            "network_management_server",
+            "network_router",
+            "print_server",
+            "proxy_server",
+            "software_distribution_server",
+            "virtualization_server",
+            "web_server"
+        ],
+        "requires": [],
+        "subtechniques": {},
+        "tactic": [
+            "Discovery"
+        ]
+    },
+    "T1620": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Reflective Code Loading",
+        "provides": [
+            "credentials_admin_local",
+            "defense_evasion"
+        ],
+        "relevant_for": [
+            "authentication_server",
+            "backup_server",
+            "client",
+            "content_management_server",
+            "database_server",
+            "directory_server",
+            "file_server",
+            "instant_messaging_server",
+            "log_server",
+            "login_server",
+            "mail_server",
+            "name_server",
+            "network_firewall",
+            "network_management_server",
+            "network_router",
+            "print_server",
+            "proxy_server",
+            "software_distribution_server",
+            "virtualization_server",
+            "web_server"
+        ],
+        "requires": [
+            "code_executed",
+            "info_process_info",
+            "privileges_admin_local",
+            "tool_delivery"
+        ],
+        "subtechniques": {},
+        "tactic": [
+            "Defense Evasion"
+        ]
+    },
+    "T1621": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Multi-Factor Authentication Request Generation",
+        "provides": [
+            "credentials_2fa_token",
+            "privileges_user_thirdparty"
+        ],
+        "relevant_for": [],
+        "requires": [
+            "credentials_user_thirdparty",
+            "info_email_address"
+        ],
+        "subtechniques": {},
+        "tactic": []
+    },
+    "T1622": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Debugger Evasion",
+        "provides": [],
+        "relevant_for": [],
+        "requires": [],
+        "subtechniques": {},
+        "tactic": []
+    },
+    "T1647": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Plist File Modification",
+        "provides": [
+            "defense_evasion"
+        ],
+        "relevant_for": [
+            "client"
+        ],
+        "requires": [
+            "privileges_user_local"
+        ],
+        "subtechniques": {},
+        "tactic": [
+            "Defense Evasion"
+        ]
+    },
+    "T1648": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Serverless Execution",
+        "provides": [],
+        "relevant_for": [],
+        "requires": [],
+        "subtechniques": {},
+        "tactic": []
+    },
+    "T1649": {
+        "conditional_provides": {},
+        "mitigations": [],
+        "name": "Steal or Forge Authentication Certificates",
+        "provides": [
+            "credentials_user_domain"
+        ],
+        "relevant_for": [
+            "authentication_server",
+            "backup_server",
+            "client",
+            "content_management_server",
+            "database_server",
+            "directory_server",
+            "file_server",
+            "instant_messaging_server",
+            "log_server",
+            "login_server",
+            "mail_server",
+            "name_server",
+            "network_firewall",
+            "network_management_server",
+            "network_router",
+            "print_server",
+            "proxy_server",
+            "software_distribution_server",
+            "virtualization_server",
+            "web_server"
+        ],
+        "requires": [
+            "access_network",
+            "privileges_user_domain"
+        ],
+        "subtechniques": {},
+        "tactic": [
+            "Credential Access"
         ]
     }
 }
