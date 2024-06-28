@@ -15,7 +15,7 @@ To decide when the different techniques are to be found in such a set, `promises
 Clone this repository:
 
 ```bash
-git clone https://github.com/mnemonic-no/aep-data
+git clone https://github.com/mnemonic-no/aep
 ```
 
 Install [Adversary Emulation Planner](https://github.com/mnemonic-no/aep) with pip:
