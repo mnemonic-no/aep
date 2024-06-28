@@ -35,7 +35,7 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1001.001": {
                 "name": "Junk Data"
             },
@@ -46,7 +46,7 @@
                 "name": "Protocol Impersonation"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Command and Control"
         ]
     },
@@ -98,7 +98,7 @@
             "code_executed",
             "privileges_admin_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1003.001": {
                 "name": "LSASS Memory",
                 "provides": [
@@ -211,7 +211,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Credential Access"
         ]
     },
@@ -254,8 +254,8 @@
             "moved_laterally",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Collection"
         ]
     },
@@ -287,8 +287,8 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -324,8 +324,8 @@
         "requires": [
             "code_executed"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -370,8 +370,8 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Command and Control"
         ]
     },
@@ -405,8 +405,8 @@
         "requires": [
             "code_executed"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -445,7 +445,7 @@
             "code_executed",
             "target_information"
         ],
-        "subtechniques": {
+        "children": {
             "T1011.001": {
                 "name": "Exfiltration Over Bluetooth",
                 "requires": [
@@ -455,7 +455,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Exfiltration"
         ]
     },
@@ -492,8 +492,8 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -527,8 +527,8 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -565,12 +565,12 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1016.001": {
                 "name": "Internet Connection Discovery"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -607,8 +607,8 @@
             "access_network",
             "code_executed"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -645,7 +645,7 @@
             "code_executed",
             "target_information"
         ],
-        "subtechniques": {
+        "children": {
             "T1020.001": {
                 "name": "Traffic Duplication",
                 "requires": [
@@ -655,7 +655,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Exfiltration"
         ]
     },
@@ -682,7 +682,7 @@
             "info_network_hosts",
             "info_network_services"
         ],
-        "subtechniques": {
+        "children": {
             "T1021.001": {
                 "name": "Remote Desktop Protocol"
             },
@@ -714,7 +714,7 @@
                 "name": "Windows Remote Management"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Lateral Movement"
         ]
     },
@@ -753,8 +753,8 @@
             "moved_laterally",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Collection"
         ]
     },
@@ -792,7 +792,7 @@
         "requires": [
             "code_executed"
         ],
-        "subtechniques": {
+        "children": {
             "T1027.001": {
                 "name": "Binary Padding"
             },
@@ -812,7 +812,7 @@
                 "name": "Embedded Payloads"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -848,8 +848,8 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Exfiltration"
         ]
     },
@@ -885,8 +885,8 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Exfiltration"
         ]
     },
@@ -923,8 +923,8 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -962,7 +962,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1036.001": {
                 "name": "Invalid Code Signature"
             },
@@ -985,7 +985,7 @@
                 "name": "Double File Extension"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -1026,7 +1026,7 @@
             "code_executed",
             "privileges_admin_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1037.001": {
                 "name": "Logon Script (Windows)",
                 "provides": [
@@ -1069,7 +1069,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Persistence",
             "Privilege Escalation"
         ]
@@ -1107,8 +1107,8 @@
             "access_network",
             "privileges_user_domain"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Collection"
         ]
     },
@@ -1160,8 +1160,8 @@
             "code_executed",
             "privileges_admin_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Credential Access",
             "Discovery"
         ]
@@ -1202,8 +1202,8 @@
             "adversary_controlled_communication_channel",
             "target_information"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Exfiltration"
         ]
     },
@@ -1246,8 +1246,8 @@
             "code_executed",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -1290,8 +1290,8 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Execution"
         ]
     },
@@ -1333,7 +1333,7 @@
             "file_transfer",
             "target_information"
         ],
-        "subtechniques": {
+        "children": {
             "T1048.001": {
                 "name": "Exfiltration Over Symmetric Encrypted Non-C2 Protocol"
             },
@@ -1344,7 +1344,7 @@
                 "name": "Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Exfiltration"
         ]
     },
@@ -1381,8 +1381,8 @@
         "requires": [
             "code_executed"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -1422,12 +1422,12 @@
             "access_physical",
             "target_information"
         ],
-        "subtechniques": {
+        "children": {
             "T1052.001": {
                 "name": "Exfiltration over USB"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Exfiltration"
         ]
     },
@@ -1476,7 +1476,7 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1053.001": {
                 "name": "At (Linux)"
             },
@@ -1514,7 +1514,7 @@
                 "name": "Container Orchestration Job"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Execution",
             "Persistence",
             "Privilege Escalation"
@@ -1559,7 +1559,7 @@
             "privileges_admin_local",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1055.001": {
                 "name": "Dynamic-link Library Injection",
                 "provides": [
@@ -1711,7 +1711,7 @@
                 "name": "ListPlanting"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion",
             "Privilege Escalation"
         ]
@@ -1735,7 +1735,7 @@
             "privileges_admin_local",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1056.001": {
                 "name": "Keylogging"
             },
@@ -1765,7 +1765,7 @@
                 "name": "Credential API Hooking"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Collection",
             "Credential Access"
         ]
@@ -1803,8 +1803,8 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -1852,7 +1852,7 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1059.001": {
                 "name": "PowerShell"
             },
@@ -1893,7 +1893,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Execution"
         ]
     },
@@ -1940,8 +1940,8 @@
             "exploit_delivery",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Privilege Escalation"
         ]
     },
@@ -1980,7 +1980,7 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1069.001": {
                 "name": "Local Groups"
             },
@@ -1995,7 +1995,7 @@
                 "name": "Cloud Groups"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -2036,7 +2036,7 @@
             "code_executed",
             "privileges_admin_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1070.001": {
                 "name": "Clear Windows Event Logs"
             },
@@ -2071,7 +2071,7 @@
                 "name": "Clear Network Connection History and Configurations"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -2116,7 +2116,7 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1071.001": {
                 "name": "Web Protocols"
             },
@@ -2130,7 +2130,7 @@
                 "name": "DNS"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Command and Control"
         ]
     },
@@ -2164,8 +2164,8 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Execution",
             "Lateral Movement"
         ]
@@ -2207,7 +2207,7 @@
             "privileges_user_local",
             "target_information"
         ],
-        "subtechniques": {
+        "children": {
             "T1074.001": {
                 "name": "Local Data Staging"
             },
@@ -2215,7 +2215,7 @@
                 "name": "Remote Data Staging"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Collection"
         ]
     },
@@ -2257,7 +2257,7 @@
         "requires": [
             "credentials_user_domain"
         ],
-        "subtechniques": {
+        "children": {
             "T1078.001": {
                 "name": "Default Accounts",
                 "requires": []
@@ -2281,7 +2281,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion",
             "Initial Access",
             "Persistence",
@@ -2314,8 +2314,8 @@
             "info_network_shares",
             "privileges_user_domain"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Lateral Movement"
         ]
     },
@@ -2353,8 +2353,8 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -2390,8 +2390,8 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -2431,7 +2431,7 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1087.001": {
                 "name": "Local Account"
             },
@@ -2448,7 +2448,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -2488,7 +2488,7 @@
         "requires": [
             "adversary_controlled_communication_channel"
         ],
-        "subtechniques": {
+        "children": {
             "T1090.001": {
                 "name": "Internal Proxy"
             },
@@ -2502,7 +2502,7 @@
                 "name": "Domain Fronting"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Command and Control"
         ]
     },
@@ -2545,8 +2545,8 @@
         "requires": [
             "access_physical"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Initial Access",
             "Lateral Movement"
         ]
@@ -2587,8 +2587,8 @@
             "exploit_available",
             "exploit_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Command and Control"
         ]
     },
@@ -2635,8 +2635,8 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Command and Control"
         ]
     },
@@ -2678,7 +2678,7 @@
             "code_executed",
             "privileges_admin_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1098.001": {
                 "name": "Additional Cloud Credentials",
                 "requires": [
@@ -2702,7 +2702,7 @@
                 "name": "Device Registration"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Persistence"
         ]
     },
@@ -2742,7 +2742,7 @@
             "access_network",
             "code_executed"
         ],
-        "subtechniques": {
+        "children": {
             "T1102.001": {
                 "name": "Dead Drop Resolver"
             },
@@ -2753,7 +2753,7 @@
                 "name": "One-Way Communication"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Command and Control"
         ]
     },
@@ -2789,8 +2789,8 @@
         "requires": [
             "adversary_controlled_communication_channel"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Command and Control"
         ]
     },
@@ -2830,8 +2830,8 @@
             "code_executed",
             "file_transfer"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Command and Control"
         ]
     },
@@ -2873,8 +2873,8 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Execution"
         ]
     },
@@ -2917,7 +2917,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1110.001": {
                 "conditional_provides": {
                     "poor_policy": [
@@ -2965,7 +2965,7 @@
                 "provides": []
             }
         },
-        "tactic": [
+        "agent_class": [
             "Credential Access"
         ]
     },
@@ -2987,8 +2987,8 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Credential Access"
         ]
     },
@@ -3028,8 +3028,8 @@
             "access_network",
             "credentials_admin_domain"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -3048,8 +3048,8 @@
             "moved_laterally",
             "privileges_admin_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Collection"
         ]
     },
@@ -3094,7 +3094,7 @@
             "access_network",
             "credentials_user_domain"
         ],
-        "subtechniques": {
+        "children": {
             "T1114.001": {
                 "name": "Local Email Collection",
                 "requires": [
@@ -3111,7 +3111,7 @@
                 "name": "Email Forwarding Rule"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Collection"
         ]
     },
@@ -3127,8 +3127,8 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Collection"
         ]
     },
@@ -3172,8 +3172,8 @@
             "info_username",
             "moved_laterally"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Collection"
         ]
     },
@@ -3211,8 +3211,8 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -3232,8 +3232,8 @@
             "privileges_user_local",
 	    "moved_laterally"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Collection"
         ]
     },
@@ -3270,8 +3270,8 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -3290,8 +3290,8 @@
             "info_peripheral_devices",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Collection"
         ]
     },
@@ -3326,12 +3326,12 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1127.001": {
                 "name": "MSBuild"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -3372,8 +3372,8 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Execution"
         ]
     },
@@ -3413,7 +3413,7 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1132.001": {
                 "name": "Standard Encoding"
             },
@@ -3421,7 +3421,7 @@
                 "name": "Non-Standard Encoding"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Command and Control"
         ]
     },
@@ -3445,8 +3445,8 @@
         "requires": [
             "credentials_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Initial Access",
             "Persistence"
         ]
@@ -3489,7 +3489,7 @@
             "code_executed",
             "privileges_admin_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1134.001": {
                 "name": "Token Impersonation/Theft"
             },
@@ -3517,7 +3517,7 @@
                 "name": "SID-History Injection"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion",
             "Privilege Escalation"
         ]
@@ -3556,8 +3556,8 @@
         "requires": [
             "access_network"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -3598,7 +3598,7 @@
         "requires": [
             "privileges_admin_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1136.001": {
                 "name": "Local Account",
                 "provides": [
@@ -3623,7 +3623,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Persistence"
         ]
     },
@@ -3649,7 +3649,7 @@
             "privileges_user_local",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1137.001": {
                 "name": "Office Template Macros"
             },
@@ -3669,7 +3669,7 @@
                 "name": "Add-ins"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Persistence"
         ]
     },
@@ -3706,8 +3706,8 @@
             "access_filesystem",
             "code_executed"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -3733,8 +3733,8 @@
         "requires": [
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Persistence"
         ]
     },
@@ -3760,8 +3760,8 @@
             "privileges_user_local",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Collection"
         ]
     },
@@ -3788,8 +3788,8 @@
             "exploit_delivery",
             "infrastructure_server"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Credential Access"
         ]
     },
@@ -3813,8 +3813,8 @@
             "exploit_available",
             "waterhole"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Initial Access"
         ]
     },
@@ -3849,8 +3849,8 @@
             "exploit_available",
             "info_vulnerability"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Initial Access"
         ]
     },
@@ -3888,7 +3888,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1195.001": {
                 "name": "Compromise Software Dependencies and Development Tools"
             },
@@ -3899,7 +3899,7 @@
                 "name": "Compromise Hardware Supply Chain"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Initial Access"
         ]
     },
@@ -3942,8 +3942,8 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense Evasion",
             "Persistence"
         ]
@@ -3987,8 +3987,8 @@
         "requires": [
             "info_network_trust"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Initial Access"
         ]
     },
@@ -4030,8 +4030,8 @@
         "requires": [
             "access_physical"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Initial Access"
         ]
     },
@@ -4070,8 +4070,8 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -4103,8 +4103,8 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -4133,8 +4133,8 @@
             "exploit_delivery",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Execution"
         ]
     },
@@ -4164,7 +4164,7 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1204.001": {
                 "name": "Malicious Link"
             },
@@ -4175,7 +4175,7 @@
                 "name": "Malicious Image"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Execution"
         ]
     },
@@ -4219,7 +4219,7 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1205.001": {
                 "name": "Port Knocking"
             },
@@ -4232,7 +4232,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Command and Control",
             "Defense Evasion",
             "Persistence"
@@ -4266,8 +4266,8 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -4318,8 +4318,8 @@
             "info_network_services",
             "info_vulnerability"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Lateral Movement"
         ]
     },
@@ -4356,8 +4356,8 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -4400,8 +4400,8 @@
         "requires": [
             "exploit_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Credential Access"
         ]
     },
@@ -4432,7 +4432,7 @@
             "info_username",
             "moved_laterally"
         ],
-        "subtechniques": {
+        "children": {
             "T1213.001": {
                 "name": "Confluence",
                 "requires": [
@@ -4459,7 +4459,7 @@
                 "name": "Code Repositories"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Collection"
         ]
     },
@@ -4493,12 +4493,12 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1216.001": {
                 "name": "PubPrn"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -4520,8 +4520,8 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -4560,7 +4560,7 @@
         "requires": [
             "code_executed"
         ],
-        "subtechniques": {
+        "children": {
             "T1218.001": {
                 "name": "Compiled HTML File"
             },
@@ -4598,7 +4598,7 @@
                 "name": "Mavinject"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -4642,8 +4642,8 @@
             "code_executed",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Command and Control"
         ]
     },
@@ -4677,8 +4677,8 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -4715,8 +4715,8 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -4751,7 +4751,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1222.001": {
                 "name": "Windows File and Directory Permissions Modification"
             },
@@ -4759,7 +4759,7 @@
                 "name": "Linux and Mac File and Directory Permissions Modification"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -4795,12 +4795,12 @@
         "requires": [
             "target_information"
         ],
-        "subtechniques": {
+        "children": {
             "T1480.001": {
                 "name": "Environmental Keying"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -4839,8 +4839,8 @@
         "requires": [
             "access_network"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -4879,7 +4879,7 @@
             "code_executed",
             "privileges_admin_domain"
         ],
-        "subtechniques": {
+        "children": {
             "T1484.001": {
                 "name": "Group Policy Modifictaion"
             },
@@ -4887,7 +4887,7 @@
                 "name": "Domain Trust Modification"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion",
             "Privilege Escalation"
         ]
@@ -4926,8 +4926,8 @@
         "requires": [
             "privileges_admin_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Impact"
         ]
     },
@@ -4967,8 +4967,8 @@
             "privileges_user_local",
             "target_information"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Impact"
         ]
     },
@@ -5011,8 +5011,8 @@
             "code_executed",
             "privileges_admin_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Impact"
         ]
     },
@@ -5049,8 +5049,8 @@
         "requires": [
             "privileges_admin_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Impact"
         ]
     },
@@ -5090,7 +5090,7 @@
             "privileges_admin_local",
             "target_information"
         ],
-        "subtechniques": {
+        "children": {
             "T1491.001": {
                 "name": "Internal Defacement"
             },
@@ -5098,7 +5098,7 @@
                 "name": "External Defacement"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Impact"
         ]
     },
@@ -5142,8 +5142,8 @@
             "privileges_admin_local",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Impact"
         ]
     },
@@ -5180,8 +5180,8 @@
             "privileges_user_local",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Impact"
         ]
     },
@@ -5213,7 +5213,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1497.001": {
                 "name": "System Checks"
             },
@@ -5224,7 +5224,7 @@
                 "name": "Time Based Evasion"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion",
             "Discovery"
         ]
@@ -5261,7 +5261,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1498.001": {
                 "name": "Direct Network Flood",
                 "requires": [
@@ -5277,7 +5277,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Impact"
         ]
     },
@@ -5310,7 +5310,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1499.001": {
                 "name": "OS Exhaustion Flood",
                 "requires": [
@@ -5340,7 +5340,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Impact"
         ]
     },
@@ -5384,7 +5384,7 @@
             "privileges_admin_local",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1505.001": {
                 "name": "SQL Stored Procedures",
                 "relevant_for": [
@@ -5423,7 +5423,7 @@
                 "name": "Terminal Services DLL"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Persistence"
         ]
     },
@@ -5461,12 +5461,12 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1518.001": {
                 "name": "Security Software Discovery"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -5493,8 +5493,8 @@
             "privileges_user_thirdparty",
             "tool_available"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Persistence"
         ]
     },
@@ -5531,8 +5531,8 @@
             "access_network",
             "credentials_user_domain"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -5554,8 +5554,8 @@
         "requires": [
             "waterhole"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Credential Access"
         ]
     },
@@ -5592,8 +5592,8 @@
             "code_executed",
             "privileges_admin_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Impact"
         ]
     },
@@ -5633,8 +5633,8 @@
         "requires": [
             "access_network"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Collection"
         ]
     },
@@ -5670,8 +5670,8 @@
         "requires": [
             "privileges_admin_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Impact"
         ]
     },
@@ -5696,8 +5696,8 @@
             "info_target_employee",
             "privileges_user_domain"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Lateral Movement"
         ]
     },
@@ -5731,8 +5731,8 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -5774,8 +5774,8 @@
             "access_network",
             "target_information"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Exfiltration"
         ]
     },
@@ -5815,8 +5815,8 @@
             "access_network",
             "credentials_user_domain"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -5844,8 +5844,8 @@
             "privileges_user_local",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Credential Access"
         ]
     },
@@ -5888,7 +5888,7 @@
             "privileges_admin_local",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1542.001": {
                 "name": "System Firmware"
             },
@@ -5905,7 +5905,7 @@
                 "name": "TFTP Boot"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion",
             "Persistence"
         ]
@@ -5957,7 +5957,7 @@
             "info_process_info",
             "privileges_user_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1543.001": {
                 "name": "Launch Agent",
                 "requires": [
@@ -6001,7 +6001,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Persistence",
             "Privilege Escalation"
         ]
@@ -6049,7 +6049,7 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1546.001": {
                 "name": "Change Default File Association"
             },
@@ -6161,7 +6161,7 @@
                 "name": "Installer Packages"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Persistence",
             "Privilege Escalation"
         ]
@@ -6206,7 +6206,7 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1547.001": {
                 "name": "Registry Run Keys / Startup Folder"
             },
@@ -6308,7 +6308,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Persistence",
             "Privilege Escalation"
         ]
@@ -6354,7 +6354,7 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1548.001": {
                 "name": "Setuid and Setgid"
             },
@@ -6368,7 +6368,7 @@
                 "name": "Elevated Execution with Prompt"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion",
             "Privilege Escalation"
         ]
@@ -6413,7 +6413,7 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1550.001": {
                 "name": "Application Access Token",
                 "relevant_for": [
@@ -6440,7 +6440,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion",
             "Lateral Movement"
         ]
@@ -6483,7 +6483,7 @@
             "code_executed",
             "privileges_user_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1552.001": {
                 "name": "Credentials In Files"
             },
@@ -6512,7 +6512,7 @@
                 "name": "Container API"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Credential Access"
         ]
     },
@@ -6552,7 +6552,7 @@
             "code_executed",
             "credentials_admin_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1553.001": {
                 "name": "Gatekeeper Bypass",
                 "requires": [
@@ -6581,7 +6581,7 @@
                 "name": "Code Signing Policy Modification"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -6620,8 +6620,8 @@
             "access_filesystem",
             "privileges_admin_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Persistence"
         ]
     },
@@ -6651,7 +6651,7 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1555.001": {
                 "name": "Keychain",
                 "requires": [
@@ -6697,7 +6697,7 @@
                 "name": "Password Managers"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Credential Access"
         ]
     },
@@ -6743,7 +6743,7 @@
             "code_executed",
             "privileges_admin_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1556.001": {
                 "name": "Domain Controller Authentication",
                 "provides": [
@@ -6796,7 +6796,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Credential Access",
             "Defense Evasion"
         ]
@@ -6832,7 +6832,7 @@
             "access_network",
             "code_executed"
         ],
-        "subtechniques": {
+        "children": {
             "T1557.001": {
                 "name": "LLMNR/NBT-NS Poisoning and SMB Relay"
             },
@@ -6843,7 +6843,7 @@
                 "name": "DHCP Spoofing"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Collection",
             "Credential Access"
         ]
@@ -6888,7 +6888,7 @@
             "code_executed",
             "privileges_admin_local"
         ],
-        "subtechniques": {
+        "children": {
             "T1558.001": {
                 "name": "Golden Ticket",
                 "requires": [
@@ -6920,7 +6920,7 @@
                 "provides": []
             }
         },
-        "tactic": [
+        "agent_class": [
             "Credential Access"
         ]
     },
@@ -6965,7 +6965,7 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1559.001": {
                 "name": "Component Object Model"
             },
@@ -6976,7 +6976,7 @@
                 "name": "XPC Services"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Execution"
         ]
     },
@@ -7014,7 +7014,7 @@
             "code_executed",
             "target_information"
         ],
-        "subtechniques": {
+        "children": {
             "T1560.001": {
                 "name": "Archive via Utility"
             },
@@ -7030,7 +7030,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Collection"
         ]
     },
@@ -7069,7 +7069,7 @@
             "privileges_admin_local",
             "target_information"
         ],
-        "subtechniques": {
+        "children": {
             "T1561.001": {
                 "name": "Disk Content Wipe"
             },
@@ -7077,7 +7077,7 @@
                 "name": "Disk Structure Wipe"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Impact"
         ]
     },
@@ -7117,7 +7117,7 @@
         "requires": [
             "credentials_admin_domain"
         ],
-        "subtechniques": {
+        "children": {
             "T1562.001": {
                 "name": "Disable or Modify Tools"
             },
@@ -7149,7 +7149,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -7178,7 +7178,7 @@
             "privileges_admin_local",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1563.001": {
                 "name": "SSH Hijacking",
                 "requires": [
@@ -7196,7 +7196,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Lateral Movement"
         ]
     },
@@ -7228,7 +7228,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1564.001": {
                 "name": "Hidden Files and Directories"
             },
@@ -7254,7 +7254,7 @@
                 "name": "Email Hiding Rules"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -7297,7 +7297,7 @@
             "privileges_admin_local",
             "target_information"
         ],
-        "subtechniques": {
+        "children": {
             "T1565.001": {
                 "name": "Stored Data Manipulation",
                 "requires": [
@@ -7312,7 +7312,7 @@
                 "name": "Runtime Data Manipulation"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Impact"
         ]
     },
@@ -7334,7 +7334,7 @@
         "requires": [
             "info_email_address"
         ],
-        "subtechniques": {
+        "children": {
             "T1566.001": {
                 "name": "Spearphishing Attachment"
             },
@@ -7345,7 +7345,7 @@
                 "name": "Spearphishing via Service"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Initial Access"
         ]
     },
@@ -7384,7 +7384,7 @@
             "access_network",
             "target_information"
         ],
-        "subtechniques": {
+        "children": {
             "T1567.001": {
                 "name": "Exfiltration to Code Repository"
             },
@@ -7392,7 +7392,7 @@
                 "name": "Exfiltration to Cloud Storage"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Exfiltration"
         ]
     },
@@ -7435,7 +7435,7 @@
             "privileges_user_local",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1568.001": {
                 "name": "Fast Flux DNS"
             },
@@ -7446,7 +7446,7 @@
                 "name": "DNS Calculation"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Command and Control"
         ]
     },
@@ -7494,7 +7494,7 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1569.001": {
                 "name": "Launchctl"
             },
@@ -7502,7 +7502,7 @@
                 "name": "Service Execution"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Execution"
         ]
     },
@@ -7548,8 +7548,8 @@
             "info_network_services",
             "tool_available"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Lateral Movement"
         ]
     },
@@ -7595,8 +7595,8 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Command and Control"
         ]
     },
@@ -7637,8 +7637,8 @@
             "code_executed",
             "privileges_user_domain"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Command and Control"
         ]
     },
@@ -7679,7 +7679,7 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1573.001": {
                 "name": "Symmetric Cryptography"
             },
@@ -7687,7 +7687,7 @@
                 "name": "Asymmetric Cryptography"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Command and Control"
         ]
     },
@@ -7741,7 +7741,7 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1574.001": {
                 "name": "DLL Search Order Hijacking"
             },
@@ -7833,7 +7833,7 @@
                 "name": "KernelCallbackTable"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion",
             "Persistence",
             "Privilege Escalation"
@@ -7870,7 +7870,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1578.001": {
                 "name": "Create Snapshot"
             },
@@ -7884,7 +7884,7 @@
                 "name": "Revert Cloud Instance"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -7924,8 +7924,8 @@
             "access_network",
             "credentials_user_domain"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -7942,7 +7942,7 @@
         ],
         "relevant_for": [],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1583.001": {
                 "name": "Domains"
             },
@@ -7965,7 +7965,7 @@
                 "name": "Serverless"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Resource Development"
         ]
     },
@@ -7982,7 +7982,7 @@
         ],
         "relevant_for": [],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1584.001": {
                 "name": "Domains"
             },
@@ -8005,7 +8005,7 @@
                 "name": "Serverless"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Resource Development"
         ]
     },
@@ -8021,7 +8021,7 @@
         ],
         "relevant_for": [],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1585.001": {
                 "name": "Social Media Accounts"
             },
@@ -8032,7 +8032,7 @@
                 "name": "Cloud Accounts"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Resource Development"
         ]
     },
@@ -8050,7 +8050,7 @@
         "requires": [
             "info_target_employee"
         ],
-        "subtechniques": {
+        "children": {
             "T1586.001": {
                 "name": "Social Media Accounts",
                 "requires": [
@@ -8067,7 +8067,7 @@
                 "name": "Cloud Accounts"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Resource Development"
         ]
     },
@@ -8084,7 +8084,7 @@
         ],
         "relevant_for": [],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1587.001": {
                 "name": "Malware"
             },
@@ -8098,7 +8098,7 @@
                 "name": "Exploits"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Resource Development"
         ]
     },
@@ -8115,7 +8115,7 @@
         ],
         "relevant_for": [],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1588.001": {
                 "name": "Malware"
             },
@@ -8135,7 +8135,7 @@
                 "name": "Vulnerabilities"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Resource Development"
         ]
     },
@@ -8165,7 +8165,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1589.001": {
                 "name": "Credentials",
                 "provides": [
@@ -8184,7 +8184,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Reconnaissance"
         ]
     },
@@ -8206,7 +8206,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1590.001": {
                 "name": "Domain Properties",
                 "provides": [
@@ -8251,7 +8251,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Reconnaissance"
         ]
     },
@@ -8276,7 +8276,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1591.001": {
                 "name": "Determine Physical Locations",
                 "provides": [
@@ -8299,7 +8299,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Reconnaissance"
         ]
     },
@@ -8321,7 +8321,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1592.001": {
                 "name": "Hardware",
                 "provides": [
@@ -8352,7 +8352,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Reconnaissance"
         ]
     },
@@ -8379,7 +8379,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1593.001": {
                 "name": "Social Media"
             },
@@ -8390,7 +8390,7 @@
                 "name": "Code Repositories"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Reconnaissance"
         ]
     },
@@ -8417,8 +8417,8 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Reconnaissance"
         ]
     },
@@ -8439,7 +8439,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1595.001": {
                 "name": "Scanning IP Blocks",
                 "provides": [
@@ -8459,7 +8459,7 @@
                 "name": "Wordlist Scanning"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Reconnaissance"
         ]
     },
@@ -8480,7 +8480,7 @@
         ],
         "relevant_for": [],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1596.001": {
                 "name": "DNS/Passive DNS",
                 "provides": [
@@ -8511,7 +8511,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Reconnaissance"
         ]
     },
@@ -8543,7 +8543,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1597.001": {
                 "name": "Threat Intel Vendors",
                 "provides": []
@@ -8552,7 +8552,7 @@
                 "name": "Purchase Technical Data"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Reconnaissance"
         ]
     },
@@ -8580,7 +8580,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1598.001": {
                 "name": "Spearphishing Service"
             },
@@ -8591,7 +8591,7 @@
                 "name": "Spearphishing Link"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Reconnaissance"
         ]
     },
@@ -8602,8 +8602,8 @@
         "provides": [],
         "relevant_for": [],
         "requires": [],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -8635,7 +8635,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1600.001": {
                 "name": "Reduce Key Space"
             },
@@ -8643,7 +8643,7 @@
                 "name": "Disable Crypto Hardware"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -8682,7 +8682,7 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {
+        "children": {
             "T1601.001": {
                 "name": "Patch System Image"
             },
@@ -8690,7 +8690,7 @@
                 "name": "Downgrade System Image"
             }
         },
-        "tactic": [
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -8744,7 +8744,7 @@
             "tool_available",
             "tool_delivery"
         ],
-        "subtechniques": {
+        "children": {
             "T1602.001": {
                 "name": "SNMP (MIB Dump)",
                 "provides": [
@@ -8777,7 +8777,7 @@
                 ]
             }
         },
-        "tactic": [
+        "agent_class": [
             "Collection"
         ]
     },
@@ -8790,8 +8790,8 @@
         ],
         "relevant_for": [],
         "requires": [],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Credential Access"
         ]
     },
@@ -8805,8 +8805,8 @@
             "infrastructure_server",
             "tool_available"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Resource Development"
         ]
     },
@@ -8827,8 +8827,8 @@
             "privileges_admin_domain",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Execution"
         ]
     },
@@ -8850,8 +8850,8 @@
             "privileges_user_local",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense  Evasion",
             "Execution"
         ]
@@ -8892,8 +8892,8 @@
             "privileges_admin_local",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Privilege Escalation"
         ]
     },
@@ -8911,8 +8911,8 @@
             "privileges_admin_local",
             "tool_available"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -8935,8 +8935,8 @@
             "privileges_admin_domain",
             "privileges_user_domain"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -8947,8 +8947,8 @@
         "provides": [],
         "relevant_for": [],
         "requires": [],
-        "subtechniques": {},
-        "tactic": []
+        "children": {},
+        "agent_class": []
     },
     "T1615": {
         "conditional_provides": {},
@@ -8963,8 +8963,8 @@
             "access_filesystem",
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -8998,8 +8998,8 @@
             "web_server"
         ],
         "requires": [],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Discovery"
         ]
     },
@@ -9039,8 +9039,8 @@
             "privileges_admin_local",
             "tool_delivery"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -9057,8 +9057,8 @@
             "credentials_user_thirdparty",
             "info_email_address"
         ],
-        "subtechniques": {},
-        "tactic": []
+        "children": {},
+        "agent_class": []
     },
     "T1622": {
         "conditional_provides": {},
@@ -9067,8 +9067,8 @@
         "provides": [],
         "relevant_for": [],
         "requires": [],
-        "subtechniques": {},
-        "tactic": []
+        "children": {},
+        "agent_class": []
     },
     "T1647": {
         "conditional_provides": {},
@@ -9083,8 +9083,8 @@
         "requires": [
             "privileges_user_local"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Defense Evasion"
         ]
     },
@@ -9095,8 +9095,8 @@
         "provides": [],
         "relevant_for": [],
         "requires": [],
-        "subtechniques": {},
-        "tactic": []
+        "children": {},
+        "agent_class": []
     },
     "T1649": {
         "conditional_provides": {},
@@ -9131,8 +9131,8 @@
             "access_network",
             "privileges_user_domain"
         ],
-        "subtechniques": {},
-        "tactic": [
+        "children": {},
+        "agent_class": [
             "Credential Access"
         ]
     }
